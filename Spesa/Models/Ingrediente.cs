@@ -6,13 +6,13 @@ namespace Spesa.Models
         public string consistenza;
         public string colore;
         public string orgine;
-        private string name;
+        private string nome;
         public string conservazione;
    
 
         public Ingrediente(string n)
         {
-            name = n;
+            nome = n;
         }
     }
 }

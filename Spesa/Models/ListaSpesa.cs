@@ -3,7 +3,13 @@ using System.Collections.Generic;
 
 namespace Spesa
 {
-    public class ListaSpesa
+    public interface IListaSpesa
+    {
+        public void Aggiungi(string cosa);
+        public void Rimuovi(string cosa);
+    }
+
+    public class ListaSpesa : IListaSpesa
     {
         private List<string> spesa = new List<string>()
         {

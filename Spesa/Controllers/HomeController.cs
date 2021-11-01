@@ -13,9 +13,9 @@ namespace Spesa.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        private readonly ListaSpesa _ls;
+        private readonly IListaSpesa _ls;
 
-        public HomeController(ILogger<HomeController> logger, ListaSpesa ls)
+        public HomeController(ILogger<HomeController> logger, IListaSpesa ls)
         {
             _logger = logger;
             _ls = ls;
